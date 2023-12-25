@@ -329,6 +329,19 @@ body {
   font-size: var(--label-2);
 }
 
+.fade-in {
+  animation: fade-in 250ms ease forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .body-3 {
   font-size: var(--body-3);
 }
@@ -844,14 +857,14 @@ article.container::before {
     grid-template-columns: 1fr 1fr;
   }
 
-  /* .highlight-card:nth-child(-n+2){
+  .highlight-card:nth-child(-n+2){
     grid-column: span 2;
     height: 160px;
   }
 
   .highlight-card:nth-child(n+3){
     height: 120px;
-  } */
+  }
 
   .highlights .m-icon {
     font-size: 3.6rem;

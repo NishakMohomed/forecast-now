@@ -30,7 +30,7 @@ export const getDate = (dateUnix, timeZone) => {
   const weekDayName = weekDayNames[date.getUTCDay()];
   const monthName = monthNames[date.getUTCMonth()];
 
-  return `${weekDayName} ${date.getUTCDate}, ${monthName}`;
+  return `${weekDayName} ${date.getUTCDate()}, ${monthName}`;
 };
 
 export const getTime = (timeUnix, timeZone) => {
