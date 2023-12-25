@@ -1004,7 +1004,7 @@ article.container::before {
   }
 
   article.container {
-    grid-template-columns: 360px minmax(0 1fr);
+    grid-template-columns: 360px minmax(0, 1fr);
     gap: 40px;
   }
 
@@ -1022,5 +1022,19 @@ article.container::before {
 
   .highlight-card:nth-child(n + 3) {
     height: 150px;
+  }
+
+  .highlight-card .m-icon {
+    font-size: 4.8rem;
+  }
+
+  .slider-list {
+    gap: 16px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .highlight-list {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
